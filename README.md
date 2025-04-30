@@ -1,6 +1,6 @@
 # MotoRentalApp
 
-MotoRentalApp is a .NET 8.0 Web API project designed for managing motorcycle rentals. It leverages modern technologies such as Entity Framework Core with PostgreSQL for data persistence, RabbitMQ for messaging, and Swagger for API documentation.
+MotoRentalApp is a .NET 8.0 Web API project designed for managing motorcycle rentals created for a test based on  https://github.com/Mottu-ops/Desafio-BackEnd/?tab=readme-ov-file instructions. It leverages modern technologies such as Entity Framework Core with PostgreSQL for data persistence, RabbitMQ for messaging, and Swagger for API documentation.
 
 ## Technologies Used
 
