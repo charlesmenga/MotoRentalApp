@@ -84,5 +84,5 @@ dotnet test
 Swagger UI is available when running the project in the development environment. Access it at:
 
 ```
-https://localhost:7148/swagger
+http://localhost:5256/swagger
 ```
