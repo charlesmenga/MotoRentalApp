@@ -10,6 +10,13 @@ MotoRentalApp is a .NET 8.0 Web API project designed for managing motorcycle ren
 - RabbitMQ
 - Swagger (Swashbuckle)
 
+## Requirements
+
+- .NET 8.0
+- Docker
+- Docker Compose
+- Entity Framework Core CLI
+
 ## Setup Instructions
 
 1. **Clone the repository**
