@@ -35,13 +35,34 @@ Update the connection string in `MotoRentalApp/appsettings.json` or `appsettings
 dotnet build MotoRentalApp/MotoRentalApp.csproj
 ```
 
-4. **Run the project**
+4. **Run Docker Compose**
+
+Ensure Docker is installed and running on your machine. Then, execute:
+```bash
+docker-compose -f MotoRentalApp/docker-compose.yml up -d
+```
+
+This will start PostgreSQL and RabbitMQ containers.
+
+5. **Apply the database migration**
+
+If you don't have dotnet-ef installed, run:
+```bash
+dotnet tool install --global dotnet-ef
+```
+
+Run the following command to apply the migration:
+```bash
+dotnet ef database update --project MotoRentalApp
+```
+
+6. **Run the project**
 
 ```bash
 dotnet run --project MotoRentalApp/MotoRentalApp.csproj
 ```
 
-The API will be available at `https://localhost:{port}`.
+The API will be available at `https://localhost:5256`.
 
 ## Running Tests
 
@@ -56,9 +77,5 @@ dotnet test
 Swagger UI is available when running the project in the development environment. Access it at:
 
 ```
-https://localhost:{port}/swagger
+https://localhost:7148/swagger
 ```
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

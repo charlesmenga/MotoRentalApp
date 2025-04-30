@@ -12,8 +12,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace MotoRentalApp.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20250428192648_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20250430182219_InitialSetup")]
+    partial class InitialSetup
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -96,6 +96,9 @@ namespace MotoRentalApp.Migrations
                     b.Property<decimal>("ValorDiaria")
                         .HasColumnType("numeric");
 
+                    b.Property<decimal>("ValorTotal")
+                        .HasColumnType("numeric");
+
                     b.HasKey("Identificador");
 
                     b.ToTable("Locacoes");
@@ -124,6 +127,31 @@ namespace MotoRentalApp.Migrations
                         .IsUnique();
 
                     b.ToTable("Motos");
+                });
+
+            modelBuilder.Entity("MotoRentalApp.Models.Moto2024", b =>
+                {
+                    b.Property<string>("Identificador")
+                        .HasColumnType("text");
+
+                    b.Property<int>("Ano")
+                        .HasColumnType("integer");
+
+                    b.Property<string>("Modelo")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Placa")
+                        .IsRequired()
+                        .HasMaxLength(10)
+                        .HasColumnType("character varying(10)");
+
+                    b.HasKey("Identificador");
+
+                    b.HasIndex("Placa")
+                        .IsUnique();
+
+                    b.ToTable("Motos2024");
                 });
 #pragma warning restore 612, 618
         }

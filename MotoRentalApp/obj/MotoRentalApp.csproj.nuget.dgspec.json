@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\CharlesMenga\\Desktop\\MotoRentalApp\\MotoRentalApp\\MotoRentalApp.csproj": {}
+    "D:\\MotoRentalApp\\MotoRentalApp\\MotoRentalApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\CharlesMenga\\Desktop\\MotoRentalApp\\MotoRentalApp\\MotoRentalApp.csproj": {
+    "D:\\MotoRentalApp\\MotoRentalApp\\MotoRentalApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\CharlesMenga\\Desktop\\MotoRentalApp\\MotoRentalApp\\MotoRentalApp.csproj",
+        "projectUniqueName": "D:\\MotoRentalApp\\MotoRentalApp\\MotoRentalApp.csproj",
         "projectName": "MotoRentalApp",
-        "projectPath": "C:\\Users\\CharlesMenga\\Desktop\\MotoRentalApp\\MotoRentalApp\\MotoRentalApp.csproj",
+        "projectPath": "D:\\MotoRentalApp\\MotoRentalApp\\MotoRentalApp.csproj",
         "packagesPath": "C:\\Users\\CharlesMenga\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\CharlesMenga\\Desktop\\MotoRentalApp\\MotoRentalApp\\obj\\",
+        "outputPath": "D:\\MotoRentalApp\\MotoRentalApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\CharlesMenga\\AppData\\Roaming\\NuGet\\NuGet.Config"

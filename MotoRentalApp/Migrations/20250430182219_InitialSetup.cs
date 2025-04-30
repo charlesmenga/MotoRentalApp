@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace MotoRentalApp.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialCreate : Migration
+    public partial class InitialSetup : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -40,7 +40,8 @@ namespace MotoRentalApp.Migrations
                     DataPrevisaoTermino = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
                     DataDevolucao = table.Column<DateTime>(type: "timestamp with time zone", nullable: true),
                     Plano = table.Column<int>(type: "integer", nullable: false),
-                    ValorDiaria = table.Column<decimal>(type: "numeric", nullable: false)
+                    ValorDiaria = table.Column<decimal>(type: "numeric", nullable: false),
+                    ValorTotal = table.Column<decimal>(type: "numeric", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -59,7 +60,20 @@ namespace MotoRentalApp.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Motos", x => x.Identificador);
-                    table.UniqueConstraint("AK_Motos_Placa", x => x.Placa);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Motos2024",
+                columns: table => new
+                {
+                    Identificador = table.Column<string>(type: "text", nullable: false),
+                    Ano = table.Column<int>(type: "integer", nullable: false),
+                    Modelo = table.Column<string>(type: "text", nullable: false),
+                    Placa = table.Column<string>(type: "character varying(10)", maxLength: 10, nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Motos2024", x => x.Identificador);
                 });
 
             migrationBuilder.CreateIndex(
@@ -79,6 +93,12 @@ namespace MotoRentalApp.Migrations
                 table: "Motos",
                 column: "Placa",
                 unique: true);
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Motos2024_Placa",
+                table: "Motos2024",
+                column: "Placa",
+                unique: true);
         }
 
         /// <inheritdoc />
@@ -92,6 +112,9 @@ namespace MotoRentalApp.Migrations
 
             migrationBuilder.DropTable(
                 name: "Motos");
+
+            migrationBuilder.DropTable(
+                name: "Motos2024");
         }
     }
 }

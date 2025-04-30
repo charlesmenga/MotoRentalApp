@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\CharlesMenga\\Desktop\\MotoRentalApp\\Tests\\Integration\\MotoRentalApp.IntegrationTests.csproj": {}
+    "D:\\MotoRentalApp\\Tests\\Integration\\MotoRentalApp.IntegrationTests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\CharlesMenga\\Desktop\\MotoRentalApp\\MotoRentalApp\\MotoRentalApp.csproj": {
+    "D:\\MotoRentalApp\\MotoRentalApp\\MotoRentalApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\CharlesMenga\\Desktop\\MotoRentalApp\\MotoRentalApp\\MotoRentalApp.csproj",
+        "projectUniqueName": "D:\\MotoRentalApp\\MotoRentalApp\\MotoRentalApp.csproj",
         "projectName": "MotoRentalApp",
-        "projectPath": "C:\\Users\\CharlesMenga\\Desktop\\MotoRentalApp\\MotoRentalApp\\MotoRentalApp.csproj",
+        "projectPath": "D:\\MotoRentalApp\\MotoRentalApp\\MotoRentalApp.csproj",
         "packagesPath": "C:\\Users\\CharlesMenga\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\CharlesMenga\\Desktop\\MotoRentalApp\\MotoRentalApp\\obj\\",
+        "outputPath": "D:\\MotoRentalApp\\MotoRentalApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\CharlesMenga\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -98,14 +98,14 @@
         }
       }
     },
-    "C:\\Users\\CharlesMenga\\Desktop\\MotoRentalApp\\Tests\\Integration\\MotoRentalApp.IntegrationTests.csproj": {
+    "D:\\MotoRentalApp\\Tests\\Integration\\MotoRentalApp.IntegrationTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\CharlesMenga\\Desktop\\MotoRentalApp\\Tests\\Integration\\MotoRentalApp.IntegrationTests.csproj",
+        "projectUniqueName": "D:\\MotoRentalApp\\Tests\\Integration\\MotoRentalApp.IntegrationTests.csproj",
         "projectName": "MotoRentalApp.IntegrationTests",
-        "projectPath": "C:\\Users\\CharlesMenga\\Desktop\\MotoRentalApp\\Tests\\Integration\\MotoRentalApp.IntegrationTests.csproj",
+        "projectPath": "D:\\MotoRentalApp\\Tests\\Integration\\MotoRentalApp.IntegrationTests.csproj",
         "packagesPath": "C:\\Users\\CharlesMenga\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\CharlesMenga\\Desktop\\MotoRentalApp\\Tests\\Integration\\obj\\",
+        "outputPath": "D:\\MotoRentalApp\\Tests\\Integration\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\CharlesMenga\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -121,8 +121,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\CharlesMenga\\Desktop\\MotoRentalApp\\MotoRentalApp\\MotoRentalApp.csproj": {
-                "projectPath": "C:\\Users\\CharlesMenga\\Desktop\\MotoRentalApp\\MotoRentalApp\\MotoRentalApp.csproj"
+              "D:\\MotoRentalApp\\MotoRentalApp\\MotoRentalApp.csproj": {
+                "projectPath": "D:\\MotoRentalApp\\MotoRentalApp\\MotoRentalApp.csproj"
               }
             }
           }
