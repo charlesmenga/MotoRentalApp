@@ -6,6 +6,11 @@
 # dotenv files
 .env
 
+# Ignore Visual Studio temporary files, build results, and debug files
+# Build Folders (the folders where Visual Studio creates its build output)
+**/bin/
+**/obj/
+
 # User-specific files
 *.rsuser
 *.suo
